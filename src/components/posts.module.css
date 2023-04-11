@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* height:100vh; */
+}
+
+.table {
+    width: 70vw;
+}
+
+table,td,tr,thead,th{
+    border:1px solid;
+    border-collapse: collapse;
+    padding:5px;
+}
+
+.remove {
+    text-align: center;
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+}
