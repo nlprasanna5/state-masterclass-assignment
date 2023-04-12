@@ -1,4 +1,4 @@
-import React, { useState, useRef,useEffect } from "react";
+import React, { useState, useRef } from "react";
 import userStyle from './user.module.css'
 
 function User() {
@@ -24,7 +24,7 @@ function User() {
 
     function handleDelete(email) {
         setUsers(
-            users.filter((item) => item.email != email)
+            users.filter((item) => item.email !== email)
         )
 
     }
@@ -44,9 +44,6 @@ function User() {
 
     }
 
-    // useEffect(() => {
-    //     updateRef.current.focus();
-    // })
     return (
         <>
             <div className={userStyle.container}>
@@ -67,7 +64,7 @@ function User() {
                                     <input name='number' type='tel' value={number} onChange={(e) => setNumber(e.target.value)} />
                                 </div>
                                 <div>
-                                    <input name='number' type='submit' className={userStyle.submit} />
+                                    <input type='submit' className={userStyle.submit} />
 
                                 </div>
                             </div>
